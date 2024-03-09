@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+            --bg-color: #232323;
+            --txt-color: #F8F8F8;
+            --yellow: #FFB600;
+            --light-pink: #FF7597;
+            --hot-pink: #FF0266;
+        }
+
+        body{
+            color: var(--txt-color);
+            background-color: var(--bg-color);
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem;
+        }
+
+        .img{
+            width: 60%;
+            height: 4rem;
+        }
+
+        .h2{
+            font-size: 1.5rem;
+        }
+
+        .p{
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .yellow-text{
+            color: var(--yellow);
+        }
+
+        .pink-text{
+            color: var(--light-pink);
+        }
+
+        .btn-container{
+            padding: 3rem;
+        }
+
+        .btn-redirect{
+            padding: 1rem;
+            border-radius: 1.5rem;
+            background-color: var(--hot-pink);
+            color: var(--txt-color);
+            text-decoration: none;
+        }
+
+        .btn-redirect:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="wrapper">
+        <img class="img" src="beematch.svg" alt="BeeMatch">
+        <h2 class="h2"><span class="username">Jair</span>, ¡Tus matches te esperan!</h2>
+        <p class="p">
+        Entra a <span class="yellow-text">beematch.dev</span> e ingresa tu <span class="pink-text">match code</span>:
+        </p>
+        <h2 class="h2 match-code">1 4 F 2 1 2</h2>
+        <p class="p">
+            Este código es único e intransferible para cada persona y con él podrás consultar tus matches.
+        </p>
+        <div class="btn-container">
+            <a class="btn-redirect" href="#">¡Empezar ya!</a>
+        </div>
+        <p class="p" style="font-size: 0.75rem; padding-top: 2rem;">
+            En caso de que no te hayas registrado en esta edición de <b>BeeMatch</b>, favor de ignorar este correo.
+        </p>
+    </main>
+</body>
+</html>
